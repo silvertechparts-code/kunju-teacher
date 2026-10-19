@@ -1,0 +1,24 @@
+Kunju Teacher: recorded teacher voices (Malayalam, English, Hindi)
+
+The sentences in this folder (pack-0.js, pack-1.js, ...) were spoken by computer voices:
+
+MALAYALAM (a female voice)
+  Model:    "vits_rasa_13" by AI4Bharat, speaker MAL_F
+            https://huggingface.co/ai4bharat/vits_rasa_13
+  Licence:  Creative Commons Attribution 4.0 International (CC BY 4.0)
+            https://creativecommons.org/licenses/by/4.0/
+  Run with: the ONNX export by MatiasLin, https://huggingface.co/MatiasLin/sherpa-onnx-vits-rasa-13
+
+ENGLISH (British English, a female voice "bf_isabella") and HINDI (a female voice "hf_beta")
+  Model:    "Kokoro-82M" by hexgrad (voice pack v1.0), run with the kokoro-onnx package by thewh1teagle
+            https://huggingface.co/hexgrad/Kokoro-82M   https://github.com/thewh1teagle/kokoro-onnx
+  Licence:  Apache License 2.0
+            https://www.apache.org/licenses/LICENSE-2.0
+
+Changes made by us: each Malayalam sentence was spoken clause by clause (a short pause was put at every comma), silence at the
+start and end was cut, the loudness was made equal for all sentences, and the audio was compressed to mono MP3 (24 kHz, 40 kbit/s) and stored as base64 text inside the .js files, so the page also works when index.html is opened as a file.
+A few Malayalam sentences with English letters or digits were written out in Malayalam letters before speaking
+(for example "A" as "ഏ"), so that the voice says them as a teacher would. English and Hindi sentences were spoken at 0.95 speed.
+
+You may use and share these recordings, even in a commercial product, as long as you keep this credit
+(the app shows a short form of the same line in the Grown-ups page, under "Voice source").
